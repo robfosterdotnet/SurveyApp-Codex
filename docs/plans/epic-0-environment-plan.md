@@ -8,6 +8,14 @@ Linked epic: `docs/requirements/implementation-epics.md` (Epic 0).
 3. Instrument telemetry (OpenTelemetry, structured logs, metrics/alerts) usable by downstream epics.
 4. Configure CI pipelines enforcing lint/test/coverage baselines (ESLint+Prettier, Vitest, Pytest, ≥80% lines).
 
+## Prerequisites (Raspberry Pi 5)
+- Raspberry Pi OS 64-bit updated via `sudo apt update && sudo apt upgrade`.
+- Build tools: `build-essential`, `python3-dev`, `pkg-config`, `libpq-dev`.
+- Docker CE (arm64) + Docker Compose plugin installed, service enabled, and user added to `docker` group.
+- Git, Node 20+, npm, and Python 3.11+ available for local tooling tasks.
+- Vault/secret manager CLI if validating WS2 vault flows on-device.
+- Connectivity to telemetry collectors (OpenTelemetry/Prometheus endpoints) if running locally.
+
 ## Workstreams & Tasks
 
 ### WS1 – Docker & Compose Scaffolding
