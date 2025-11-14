@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respondent Journey V2 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Respondent</span>
+      </header>
+
+      <section class="hero">
+        <h1>Mobile-first respondent lane</h1>
+        <p>
+          Version 2 centers on Alex’s handheld flow: secure magic link, accessible controls, autosave/resume within 30 days, and locked submissions once sent.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Magic link</span>
+          <span class="pill">Autosave cloud</span>
+          <span class="pill">WCAG AA</span>
+          <span class="pill">Immutable submit</span>
+        </div>
+      </section>
+
+      <div class="two-column">
+        <section class="panel">
+          <h2>Experience tiles</h2>
+          <div class="journey-grid">
+            <article class="journey-card">
+              <h3>Secure entry</h3>
+              <p>Alex taps the expiring link, passes OTP verification, and sees a warm welcome plus privacy statement.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Guided sections</h3>
+              <p>Sticky header shows section count, completion percentage, and autosave timestamp.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Question focus</h3>
+              <p>Likert/ranking controls animate with high-contrast focus rings; text inputs display validation hints.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Review + submit</h3>
+              <p>Summary lists each section with edit anchors (before submit). Final confirmation warns that responses cannot be changed.</p>
+            </article>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Accessibility snapshot</h2>
+          <ul class="checklist">
+            <li>
+              <span class="marker">A</span>
+              <div>
+                <strong>Keyboard & reader</strong>
+                <p>Logical tab order, aria-labels on every control, narration for autosave indicator.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">B</span>
+              <div>
+                <strong>Color & focus</strong>
+                <p>High contrast focus outlines and large tap targets that pass WCAG AA.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">C</span>
+              <div>
+                <strong>Error recovery</strong>
+                <p>Inline alerts describe what went wrong and how to fix it (no file uploads in MVP).</p>
+              </div>
+            </li>
+          </ul>
+          <p style="margin-top:1rem; color: var(--text-muted);">
+            Partial responses persist 30 days beyond closing, aligning with retention decisions.
+          </p>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h2>Journey timeline</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Link → welcome</strong>
+              <p>Magic link validated, timezone + locale confirmed, and estimated completion time shown.</p>
+              <span class="badge info">Token logs IP/device</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Autosave in action</strong>
+              <p>Every 10 seconds SurveyApp syncs responses; offline states queue until the device reconnects.</p>
+              <span class="badge success">Draft safe</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Resume scenario</strong>
+              <p>Alex leaves mid-way, returns on the same device, and picks up at the exact question with progress restored.</p>
+              <span class="badge warning">Partial stored</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Submission lock</strong>
+              <p>Confirmation page communicates that edits aren’t allowed post-submit and provides a receipt plus contact info.</p>
+              <span class="badge success">Reference #4528</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

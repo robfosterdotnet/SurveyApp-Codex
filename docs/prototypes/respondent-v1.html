@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respondent Journey – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Respondent</span>
+      </header>
+
+      <section class="hero">
+        <h1>Respond with confidence, anywhere</h1>
+        <p>
+          Alex receives a one-time token email and glides through the Customer Pulse survey on mobile. Autosave, progress cues,
+          and privacy reminders reflect every respondent requirement in the spec.
+        </p>
+        <div class="pill-list">
+          <span class="pill">One-tap re-entry</span>
+          <span class="pill">Autosave cloud sync</span>
+          <span class="pill">Accessible controls</span>
+          <span class="pill">Section progress</span>
+        </div>
+      </section>
+
+      <section class="journey-grid">
+        <article class="journey-card">
+          <h3>1. Invitation</h3>
+          <p>
+            Warm-toned email includes name, segment, and localized window reminder. CTA opens secured SurveyApp with the expiring token validated server-side.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>2. Guided welcome</h3>
+          <p>
+            Alex confirms timezone, reviews the 30-minute completion estimate, and reads the privacy/retention policy (30-day partial storage). English is available at launch.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>3. Smooth interactions</h3>
+          <p>
+            Cards expand with haptic-friendly tap targets covering Likert, ranking, numeric, and free-text questions. Autosave indicator pulses every 10 seconds.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>4. Submission & thank you</h3>
+          <p>
+            Review screen locks in answers, clarifies that submissions cannot be edited, and shares the confirmation ID plus estimated response processing timeline.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Touchpoints</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Magic link verification</strong>
+              <p>
+                Alex taps the CTA, sees verification with device + IP logging, and lands on the welcome screen with name/segment pre-filled for personalization.
+              </p>
+              <span class="badge info">Token valid for 48 hours</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Progressive sections</strong>
+              <p>
+                Section tabs show completion percent plus autosave timestamp. Inline tips explain why each question matters and include accessible descriptions.
+              </p>
+              <span class="badge success">Autosave ✓</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Edge cases handled</strong>
+              <p>
+                Alex pauses mid-way; SurveyApp stores the draft for 30 days beyond the close date and sends an optional reminder email if allowed.
+              </p>
+              <span class="badge warning">Partial hold</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Completion moment</strong>
+              <p>
+                Final review summary appears with bold icons showing rated sections. “Send receipt” emails the submission ID and retention policy for transparency.
+              </p>
+              <span class="badge success">Reference saved</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta">
+          Jump to admin analytics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </section>
+    </div>
+  </body>
+</html>

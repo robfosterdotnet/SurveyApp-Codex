@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Designer Journey – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Survey Designer</span>
+      </header>
+
+      <section class="hero">
+        <h1>Design journeys that feel effortless</h1>
+        <p>
+          Sofia, our research lead, logs in to craft a branching survey for the quarterly sentiment sprint. She needs to capture
+          metadata, add multi-format questions, and publish to APAC and EMEA audiences—all from one warm workspace.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Autosave every 10s</span>
+          <span class="pill">Branching logic map</span>
+          <span class="pill">Question bank</span>
+          <span class="pill">Timezone scheduling</span>
+        </div>
+      </section>
+
+      <section class="journey-grid">
+        <article class="journey-card">
+          <h3>1. Survey shell</h3>
+          <p>
+            Sofia creates “Q4 CX Pulse”, sets the closing date, adds owners and business objective tags, and sees instant guardrails for compliance tasks.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>2. Sections & logic</h3>
+          <p>
+            She drags sections (Onboarding, Support, Loyalty) into place. Branching is configured via natural-language rules (“If CSAT ≤ 3 then show Recovery block”).
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>3. Question palette</h3>
+          <p>
+            Each section mixes Likert, ranking, numeric, and free-text questions plus a reusable matrix from the bank. Validation badges confirm min/max rules.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>4. Preview & QC</h3>
+          <p>
+            Split preview shows desktop and mobile flows plus live screen-reader narration, ensuring autosave and hints meet WCAG expectations.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Guided Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Kickoff dashboard</strong>
+              <p>
+                Personalized feed surfaces active drafts, collaborator mentions, and AI suggestions from question banks. Sofia accepts two Likert updates and metadata auto-fills.
+              </p>
+              <span class="badge info">Context cards</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Structure & logic</strong>
+              <p>
+                Conditions are built using respondent attributes (segment, locale) and answer thresholds. Real-time validation ensures no orphaned questions remain.
+              </p>
+              <span class="badge success">Green path validated</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Preview with respondents</strong>
+              <p>
+                Sofia simulates a churn-risk persona to confirm autosave, limit of 30-day partial retention, and translations (English only today) render properly.
+              </p>
+              <span class="badge warning">2 voiceover notes resolved</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Launch & share</strong>
+              <p>
+                She schedules APAC (UTC+8) and EMEA (UTC+1) windows, uploads CSV recipients, and SurveyApp pre-generates expiring links for each segment.
+              </p>
+              <span class="badge success">Launch locked in</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta">
+          Continue to respondent preview
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </section>
+    </div>
+  </body>
+</html>

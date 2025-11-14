@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator Journey – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Administrator</span>
+      </header>
+
+      <section class="hero">
+        <h1>Command center clarity</h1>
+        <p>
+          Morgan, the program administrator, monitors survey health, distribution, and governance across workspaces. The console ties
+          directly to the requirements for analytics, audits, retention, and access.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Live completion heatmap</span>
+          <span class="pill">Anomaly alerts</span>
+          <span class="pill">Role-based controls</span>
+          <span class="pill">Data retention tuning</span>
+        </div>
+      </section>
+
+      <section class="journey-grid">
+        <article class="journey-card">
+          <h3>1. Morning scan</h3>
+          <p>
+            Morgan sees in-progress surveys, SLA timers, and any expiring respondent links. Alerts highlight anomaly detection breaches.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>2. Health insights</h3>
+          <p>
+            Live charts show completion rate, dropout by section, and median completion time. Morgan filters by segment/locale and exports CSVs.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>3. Governance actions</h3>
+          <p>
+            Permission modals enforce audit trails—Morgan grants temporary designer access, sees IP logging, and shares justification notes.
+          </p>
+        </article>
+        <article class="journey-card">
+          <h3>4. Distribution & sharing</h3>
+          <p>
+            CSV uploads, resend throttles, and expiring link controls sit next to a “Share digest” export for weekly executive updates.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Analytics Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Live pulse</strong>
+              <p>
+                Hero widget blends gradient rings for completion rate, anomaly score, and open incidents. Morgan pins “CX Pulse Q4” and “NPS Lite”.
+              </p>
+              <span class="badge info">Refresh: 30s</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Alert triage</strong>
+              <p>
+                Warm amber toast highlights a spike in drop-offs. Morgan drills into the branching view, inspects the section with 42% abandonment, and assigns Jordan to patch copy.
+              </p>
+              <span class="badge warning">Anomaly &gt; 3σ</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Policy stewardship</strong>
+              <p>
+                Retention panel lists workspaces needing overrides. Morgan approves a 90-day retention, captures the ticket ID, and SurveyApp updates audit trails instantly.
+              </p>
+              <span class="badge success">Override recorded</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Weekly digest</strong>
+              <p>
+                Morgan exports a curated report with voiceover-friendly labels and sends it through Slack Connect plus a CSV snapshot for the data warehouse.
+              </p>
+              <span class="badge info">CSV + snapshot</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta">
+          Review designer and respondent flows
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </section>
+    </div>
+  </body>
+</html>

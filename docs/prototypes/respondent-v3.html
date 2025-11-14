@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respondent Journey V3 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Respondent</span>
+      </header>
+
+      <section class="hero">
+        <h1>Guided steps for every respondent</h1>
+        <p>
+          Version 3 uses a progress rail plus action cards. This view demonstrates compliance with requirements: unique invitations,
+          autosave/resume, WCAG support, and immutable final submissions.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Progress rail</span>
+          <span class="pill">Privacy cues</span>
+          <span class="pill">Resume tokens</span>
+          <span class="pill">Final lock</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Progress rail</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Invite & verify</strong>
+              <p>Personalized email (manual send for MVP) shares the link. Verification logs device + IP for audit trail.</p>
+              <span class="badge info">Link expires in 72h</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Orientation</strong>
+              <p>Welcome card outlines estimated time, sections, and data retention (30 days for partial drafts).</p>
+              <span class="badge success">Localized to English</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Answer sections</strong>
+              <p>Each section (Company, Support, Loyalty) includes accessible controls and optional help text describing why the question matters.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Review & submit</strong>
+              <p>Before submit, Alex reviews responses but once “Send” is clicked, SurveyApp locks edits and issues a confirmation ID.</p>
+              <span class="badge warning">No edits later</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel two-column">
+        <div>
+          <h2>Experience highlights</h2>
+          <div class="journey-grid">
+            <article class="journey-card">
+              <h3>Adaptive progress</h3>
+              <p>Handy progress bar adjusts based on branching path, showing only relevant sections.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Autosave indicator</h3>
+              <p>Subtle toast (“Saved to SurveyApp 4 seconds ago”) reassures respondents their answers are safe.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Privacy prompts</h3>
+              <p>Each page reiterates data usage, ensuring trust and aligning with GDPR-friendly requirements.</p>
+            </article>
+            <article class="journey-card">
+              <h3>Support link</h3>
+              <p>Footer includes contact entry so respondents can reach admins if something looks wrong.</p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h2>Metrics & nudges</h2>
+          <div class="metric-group">
+            <div class="metric">
+              <span>Average duration</span>
+              <span>11m 40s</span>
+            </div>
+            <div class="metric">
+              <span>Autosave events</span>
+              <span>56 per session</span>
+            </div>
+            <div class="metric">
+              <span>Resume rate</span>
+              <span>32%</span>
+            </div>
+            <div class="metric">
+              <span>Reminder emails</span>
+              <span>Optional, manual send</span>
+            </div>
+          </div>
+          <p style="margin-top:1rem; color: var(--text-muted);">
+            Metrics feed into administrator dashboards (completion rate, dropout points) fulfilling analytics requirements.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator Journey V2 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Administrator</span>
+      </header>
+
+      <section class="hero">
+        <h1>Operations cockpit</h1>
+        <p>
+          Version 2 highlights Morgan’s analytics-first workflow. Requirements covered: WebSocket dashboards, anomaly alerts, CSV exports,
+          data retention overrides, and link management.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Live analytics</span>
+          <span class="pill">Distribution console</span>
+          <span class="pill">Retention controls</span>
+          <span class="pill">Access governance</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Control widgets</h2>
+        <div class="status-board">
+          <div class="status-card">
+            <h4>Completion rate</h4>
+            <strong>78%</strong>
+            <p>Updated every 30 seconds via WebSocket.</p>
+          </div>
+          <div class="status-card">
+            <h4>Drop-off alert</h4>
+            <strong>Section 3</strong>
+            <p>z-score 3.2 vs baseline → flagged.</p>
+          </div>
+          <div class="status-card">
+            <h4>Recipient links</h4>
+            <strong>1,420</strong>
+            <p>32 revoked, 14 pending resend throttle.</p>
+          </div>
+          <div class="status-card">
+            <h4>Retention overrides</h4>
+            <strong>4</strong>
+            <p>Support tickets awaiting approval.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel two-column">
+        <div>
+          <h2>Distribution workflow</h2>
+          <ul class="checklist">
+            <li>
+              <span class="marker">1</span>
+              <div>
+                <strong>Upload CSV</strong>
+                <p>Fields: email, name, segment, locale. Validation ensures required columns exist.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">2</span>
+              <div>
+                <strong>Generate links</strong>
+                <p>SurveyApp emits unique expiring URLs plus security tokens; stored status indicates queued/sent/bounced.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">3</span>
+              <div>
+                <strong>Manual send</strong>
+                <p>MVP uses manual email; admin exports CSV with tokens for the marketing tool and logs the send timestamp.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">4</span>
+              <div>
+                <strong>Track + revoke</strong>
+                <p>Admins can revoke or extend links individually; actions are auditable.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Data governance</h2>
+          <div class="metric-group">
+            <div class="metric">
+              <span>Retention default</span>
+              <span>30 days</span>
+            </div>
+            <div class="metric">
+              <span>Overrides requested</span>
+              <span>4 (Support)</span>
+            </div>
+            <div class="metric">
+              <span>Residency status</span>
+              <span>Single region</span>
+            </div>
+            <div class="metric">
+              <span>Audit log</span>
+              <span>Last entry 2 min ago</span>
+            </div>
+          </div>
+          <p style="margin-top:1rem; color: var(--text-muted);">
+            Admin actions automatically capture who/what/when/IP, satisfying audit requirements.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Daily cadence</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">08:00</div>
+            <div>
+              <strong>Health review</strong>
+              <p>Check completion, median time, anomaly alerts, and stuck background jobs.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">10:15</div>
+            <div>
+              <strong>Permissions sweep</strong>
+              <p>Approve/expire designer impersonation requests to support debugging.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">13:00</div>
+            <div>
+              <strong>Retention decisions</strong>
+              <p>Coordinate with Support to apply retention overrides (e.g., extend to 90 days).</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">16:30</div>
+            <div>
+              <strong>Digest export</strong>
+              <p>Download CSV + snapshot, ship Slack digest, and queue notes for leadership.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Designer Journey V2 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Survey Designer</span>
+      </header>
+
+      <section class="hero">
+        <h1>Blueprint workspace</h1>
+        <p>
+          Version 2 showcases the “Storyboard” home Sofia uses to move surveys from concept to launch. Each card is tied to a requirement:
+          metadata capture, multi-type questions, branching, previewing, and scheduling.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Survey metadata</span>
+          <span class="pill">Question mix</span>
+          <span class="pill">Branching validation</span>
+          <span class="pill">Launch readiness</span>
+        </div>
+      </section>
+
+      <div class="status-board">
+        <div class="status-card">
+          <h4>Survey shell</h4>
+          <strong>Complete</strong>
+          <p>Title, description, owner, tags, closing date confirmed.</p>
+        </div>
+        <div class="status-card">
+          <h4>Question bank</h4>
+          <strong>12 / 12</strong>
+          <p>Likert, ranking, numeric, text, date, and matrix coverage met.</p>
+        </div>
+        <div class="status-card">
+          <h4>Branching rules</h4>
+          <strong>5 paths</strong>
+          <p>No orphaned conditions. All segments routed.</p>
+        </div>
+        <div class="status-card">
+          <h4>Launch window</h4>
+          <strong>UTC +1</strong>
+          <p>Schedule confirmed with timezone-aware start/end.</p>
+        </div>
+      </div>
+
+      <section class="panel two-column">
+        <div>
+          <h2>Builder checklist</h2>
+          <ul class="checklist">
+            <li>
+              <span class="marker">1</span>
+              <div>
+                <strong>Metadata & compliance</strong>
+                <p>Set objective tags, owner, and retention instructions so admin dashboards inherit context.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">2</span>
+              <div>
+                <strong>Sections & logic</strong>
+                <p>Use drag-and-drop to arrange sections (Welcome, Segment Split, Recovery) and define rules with respondent attributes + scores.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">3</span>
+              <div>
+                <strong>Question detail</strong>
+                <p>Mix question types with validation (min/max, regex, required). Add help text + tooltips for accessibility.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">4</span>
+              <div>
+                <strong>Preview & approvals</strong>
+                <p>Preview desktop/mobile with screen-reader audio, then request admin sign-off to unlock “Publish”.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Collaboration feed</h2>
+          <div class="metric-group">
+            <div class="metric">
+              <span>Autosave status</span>
+              <span>Saved 12s ago</span>
+            </div>
+            <div class="metric">
+              <span>Co-editors online</span>
+              <span>Jordan, Priya</span>
+            </div>
+            <div class="metric">
+              <span>Question bank updates</span>
+              <span>3 pending</span>
+            </div>
+            <div class="metric">
+              <span>Checklist</span>
+              <span>2 of 6 tasks left</span>
+            </div>
+          </div>
+          <p style="margin-top:1rem; color: var(--text-muted);">
+            Every interaction is recorded for the audit log (who, what, when, IP) to fulfill non-functional requirements.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Journey map</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">01</div>
+            <div>
+              <strong>Start in storyboard</strong>
+              <p>
+                Sofia clones the prior quarter, updates the goal, resets closing date, and hits “Autosave ready” to confirm the 10-second save interval.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">02</div>
+            <div>
+              <strong>Build with guardrails</strong>
+              <p>Availability of question templates ensures each required question type is represented, while error chips highlight missing validation.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">03</div>
+            <div>
+              <strong>Preview & QA</strong>
+              <p>Preview simulates segments, locales, and device sizes to prove branching logic works and localization fallback (English) is correct.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">04</div>
+            <div>
+              <strong>Schedule & distribute</strong>
+              <p>Upload CSV recipients, generate expiring links, export for manual email send, and notify admins in Slack with the schedule summary.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

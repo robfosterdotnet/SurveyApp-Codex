@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Designer Journey V3 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Survey Designer</span>
+      </header>
+
+      <section class="hero">
+        <h1>Sprint board for complex launches</h1>
+        <p>
+          Version 3 focuses on a Kanban-inspired view for high-velocity designers. Cards highlight requirements like branching logic,
+          scheduled launches, compliance guardrails, and CSV distribution.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Kanban view</span>
+          <span class="pill">Branch map</span>
+          <span class="pill">Distribution pack</span>
+          <span class="pill">Audit-ready</span>
+        </div>
+      </section>
+
+      <div class="flow-grid">
+        <div class="flow-card">
+          <h4>Draft column</h4>
+          <p>
+            shows metadata entry (title, description, owner, categories), supporting documents, and acceptance criteria pulled straight from product requirements.
+          </p>
+          <div class="metric-group">
+            <div class="metric">
+              <span>Completeness</span>
+              <span>80%</span>
+            </div>
+            <div class="metric">
+              <span>Autosave</span>
+              <span>5s ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="flow-card">
+          <h4>Builder column</h4>
+          <p>
+            snapshots each section with tags like “Likert scale”, “Matrix grid”, “Free text with regex”, ensuring parity with supported question types.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Sections: 5</span>
+            <span class="pill">Branching: 4</span>
+          </div>
+        </div>
+        <div class="flow-card">
+          <h4>Review column</h4>
+          <p>
+            contains preview recordings (desktop/mobile, screen reader) and sign-off tasks for Admin + Legal plus Slack thread references.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Accessibility QA</span>
+            <span class="pill">Legal note</span>
+          </div>
+        </div>
+        <div class="flow-card">
+          <h4>Ready column</h4>
+          <p>
+            bundles schedule card, CSV upload checklist, and final “Export unique links” button to hand off to manual email campaigns per current process.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Recipients: 1,200</span>
+            <span class="pill">Segments: 3</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h2>Launch prep metrics</h2>
+        <div class="status-board">
+          <div class="status-card">
+            <h4>Autosave health</h4>
+            <strong>Green</strong>
+            <p>Every change stored within 10 seconds; offline drafts synced.</p>
+          </div>
+          <div class="status-card">
+            <h4>Branch coverage</h4>
+            <strong>100%</strong>
+            <p>All respondent segments mapped, no dead ends.</p>
+          </div>
+          <div class="status-card">
+            <h4>Preview runs</h4>
+            <strong>6 passes</strong>
+            <p>WCAG AA, mobile Safari, Chrome desktop, and voiceover tests logged.</p>
+          </div>
+          <div class="status-card">
+            <h4>Launch approvals</h4>
+            <strong>2 / 3</strong>
+            <p>Waiting for Admin review of retention + data residency notes.</p>
+          </div>
+        </div>
+
+        <a href="#" class="cta">
+          Export distribution kit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </section>
+    </div>
+  </body>
+</html>

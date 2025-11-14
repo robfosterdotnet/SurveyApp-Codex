@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator Journey V3 – SurveyApp Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surface">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">SA</div>
+          <div>
+            <strong>SurveyApp</strong>
+            <div style="color: var(--text-muted)">Prototype Experience</div>
+          </div>
+        </div>
+        <span class="persona-chip">Administrator</span>
+      </header>
+
+      <section class="hero">
+        <h1>Program map</h1>
+        <p>
+          Version 3 reframes the administrator view as a journey map across survey lifecycle: monitor, govern, support, and report.
+          Each tile mirrors requirements from analytics to exports.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Monitor</span>
+          <span class="pill">Govern</span>
+          <span class="pill">Support</span>
+          <span class="pill">Report</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Lifecycle tiles</h2>
+        <div class="journey-grid">
+          <article class="journey-card">
+            <h3>Monitor</h3>
+            <p>Realtime dashboard, completion, dropout, median time, anomalies, and alert routing via WebSocket feed.</p>
+          </article>
+          <article class="journey-card">
+            <h3>Govern</h3>
+            <p>Role assignments, impersonation approvals, and encryption/retention settings with audit logs.</p>
+          </article>
+          <article class="journey-card">
+            <h3>Support</h3>
+            <p>Support agents can impersonate designers safely, reissue links, and respond to respondent escalations.</p>
+          </article>
+          <article class="journey-card">
+            <h3>Report</h3>
+            <p>CSV exports, hourly snapshots, Slack digest, and future warehouse connectors (Postgres replica today).</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel two-column">
+        <div>
+          <h2>Program metrics</h2>
+          <div class="metric-group">
+            <div class="metric">
+              <span>Active surveys</span>
+              <span>8</span>
+            </div>
+            <div class="metric">
+              <span>Open incidents</span>
+              <span>1 anomaly</span>
+            </div>
+            <div class="metric">
+              <span>Pending approvals</span>
+              <span>3 access, 2 retention</span>
+            </div>
+            <div class="metric">
+              <span>Exports sent</span>
+              <span>5 CSV today</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Retention spotlight</h2>
+          <div class="checklist">
+            <li>
+              <span class="marker">R1</span>
+              <div>
+                <strong>Default 30 days</strong>
+                <p>Highlighted on every respondent welcome screen.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">R2</span>
+              <div>
+                <strong>Override request</strong>
+                <p>Support raises a ticket → Admin approves → system logs and schedules purge.</p>
+              </div>
+            </li>
+            <li>
+              <span class="marker">R3</span>
+              <div>
+                <strong>Compliance export</strong>
+                <p>Admins can export audit-ready logs for legal review.</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Program journey timeline</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="timeline-circle">Phase 1</div>
+            <div>
+              <strong>Kickoff + distribution</strong>
+              <p>Review designer metadata, upload CSV recipients, configure resend and revocation schedules.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">Phase 2</div>
+            <div>
+              <strong>Monitoring</strong>
+              <p>Watch live completion, respond to anomalies, coordinate with designers via Support impersonation.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">Phase 3</div>
+            <div>
+              <strong>Governance touches</strong>
+              <p>Adjust retention, audit access, rotate keys, ensure quotas (deferred) are tracked manually for now.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-circle">Phase 4</div>
+            <div>
+              <strong>Reporting & closure</strong>
+              <p>Export CSVs, push to warehouse, close survey, and archive data while keeping historical analytics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
